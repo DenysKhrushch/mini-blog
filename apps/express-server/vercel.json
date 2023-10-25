@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "build": {
+    "env": {
+      "BASE_URL": "https://mim-blog-server.vercel.app"
+    }
+  },
+  "outputDirectory": "dist/apps/express-server",
+  "routes": [
+    { "src": "/(.*)", "dest": "$1" }
+  ]
+}
