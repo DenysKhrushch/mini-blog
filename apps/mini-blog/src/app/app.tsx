@@ -1,16 +1,8 @@
-import styled from '@emotion/styled';
-
-import NxWelcome from './nx-welcome';
-
-const StyledApp = styled.div`
-  // Your style here!
-`;
+import HomePage from './home-page';
 
 export function App() {
   return (
-    <StyledApp>
-      <NxWelcome title="mini-blog" />
-    </StyledApp>
+    <HomePage />
   );
 }
 
