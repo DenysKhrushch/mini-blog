@@ -2,7 +2,7 @@ import useSWR from "swr";
 import {fetcher} from "../api";
 
 export const usePosts = () => {
-  const { data, error, isLoading } = useSWR(`https://mini-blog-server-git-main-denyskhrushch.vercel.app/posts`, fetcher)
+  const { data, error, isLoading } = useSWR(`${process.env.NX_REACT_APP_BASE_API_URL}/posts`, fetcher)
 
   return {
     posts: data,
