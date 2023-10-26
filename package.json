@@ -2,7 +2,11 @@
   "name": "@mini-blog/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "node dist/apps/express-server/main.js",
+    "heroku-postbuild": "nx build express-server"
+  },
+
   "private": true,
   "dependencies": {
     "@emotion/react": "11.11.1",
