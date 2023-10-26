@@ -9,15 +9,5 @@ export function corsHandler(app: Application) {
     'http://localhost:4200'
   ];
 
-  const corsOptions = {
-    origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error('Not allowed by CORS'));
-      }
-    },
-  };
-
-  app.use(cors(corsOptions));
+  app.use(cors(allowedOrigins));
 }
