@@ -2,7 +2,12 @@ import cors from 'cors';
 import { Application } from 'express';
 
 export function corsHandler(app: Application) {
-  const allowedOrigins = ['https://mini-blog-teal-rho.vercel.app', 'http://localhost:4200']; // Replace with your allowed origins
+  const allowedOrigins = [
+    'https://mini-blog-4gv68jcy1-denyskhrushch.vercel.app/',
+    'https://mini-blog-git-main-denyskhrushch.vercel.app/',
+    'https://mini-blog-teal-rho.vercel.app',
+    'http://localhost:4200'
+  ];
 
   const corsOptions = {
     origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
